@@ -3,25 +3,71 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Di Dev Studio</title>
+	<title>Vue.js Landing Page</title>
+
+	<!-- Google Font Start -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<style>
-		#introduce {
-			margin: 20px 0 20px 0;
-			font-size: 20px;
-			font-weight: bold;
+		* {
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 600;
+		font-style: normal;
+		font-variation-settings:
+			"slnt" 0;
+		}
+	</style>
+	<!-- Google Font End -->
+
+	<style>
+		body {
+			margin: 0;
+		}
+
+
+
+		#banner {
+			height: 60px;
+			background-color: #11252b;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 600;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#banner .vb-highlight {
+			font-size: 16px;
+			color: #75c05e;
+		}
+
+		#banner .vb-register {
+			background-color: #75c05e;
+			color: #121c1a;
+			font-size: 14px;
+			font-weight: 700;
+
+			border-radius: 5px;
+			border: none;
+			padding: 8px 15px;
+			margin: 0 20px;
 		}
 	</style>
 </head>
 <body>
-	<div>Làm lại cả thế giới</div>
-	<div id='introduce'>Giới thiệu</div>
-	<div>Khỏi dài dòng thì trong bài này mình sẽ nói về phần mình đã làm để sử dụng công cụ để có thể giúp mình expose local ra internet và làm nhiều thứ theo ý thích của mình</div>
-	<button onclick='onClickButton()'>Click me</button>
+	<div id="app">
+		<div id="banner">
+			<span class='vb-highlight'>VueConf US</span>&nbsp;- Join the official Vue.js conference | May 15-17, 2024 - New Orleans, USA
+			<button class='vb-register'>Register Now</button>
+			<span class='vb-highlight'>Use code</span>&nbsp;VUEJSDOCS&nbsp;<span class='vb-highlight'>to get $100 off!</span>
+		</div>
 
-	<script>
-		function onClickButton() {
-			alert("Click");
-		};
-	</script>
+		<div id="navigation"></div>
+		<div id="page-content"></div>
+	</div>
 </body>
 </html>
